@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_retrofit/api/api_client.dart';
+import 'package:flutter_retrofit/core/view/home/home_screen.dart';
 import 'package:flutter_retrofit/service/interceptors.dart';
 import 'package:flutter_retrofit/utils/route/route.dart';
 import 'package:flutter_retrofit/utils/shared_preferences.dart';
 import 'package:flutter_retrofit/utils/static_content/static_string.dart';
 import 'package:flutter_retrofit/utils/theme/theme.dart';
-import 'package:flutter_retrofit/view/home/home_screen.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:dio/dio.dart';
 import 'package:provider/provider.dart';
@@ -36,15 +36,14 @@ class _MyAppState extends State<MyApp> {
       providers: [
         // ChangeNotifierProvider(create: (context) => Layout()),
       ],
-       child: MaterialApp(
-          title: 'Flutter Demo',
-          theme: customTheme,
-         debugShowCheckedModeBanner: false,
-         onGenerateRoute: onGenerateRoute,
-         navigatorKey: navigatorKey,
-         home: const HomeScreen(),
-        ),
-
+      child: MaterialApp(
+        title: 'Flutter Demo',
+        theme: customTheme,
+        debugShowCheckedModeBanner: false,
+        onGenerateRoute: onGenerateRoute,
+        navigatorKey: navigatorKey,
+        home: const HomeScreen(),
+      ),
     );
   }
 }

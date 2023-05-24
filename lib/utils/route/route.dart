@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_retrofit/view/home/home_screen.dart';
+import 'package:flutter_retrofit/core/view/home/home_screen.dart';
 
 class RouteName {
   // auth

@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:flutter_retrofit/model/base_response.dart';
+import 'package:flutter_retrofit/core/model/base_response.dart';
 import 'package:flutter_retrofit/utils/shared_preferences.dart';
 
 class CustomInterceptors extends InterceptorsWrapper {
